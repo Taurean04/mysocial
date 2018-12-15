@@ -1,0 +1,31 @@
+<section id="main-section">
+  <div class="container">
+    <div class="dark-overlay">
+      <div class="main-inner container">
+        <div class="row">
+
+          <div class="col-md-6 mx-auto">
+            {{#if successMsg}}
+            <div class="alert alert-success">{{successMsg}}</div>
+            {{/if}}
+
+            {{#if errorMsg}}
+            <div class="alert alert-danger">{{errorMsg}}</div>
+            {{/if}}
+
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{/if}}
+            <div class="user">
+                      {{#if user}}
+                        <h1>Hello, {{user.username}}</h1>
+                        <a href="/bio">Update Bio</a>
+                        <p>{{user.bio}}</p>
+                      {{/if}}
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>

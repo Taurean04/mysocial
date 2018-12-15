@@ -1,0 +1,45 @@
+<section id="main-section">
+  <div class="container">
+    <div class="dark-overlay">
+      <div class="main-inner container">
+        <div class="row">
+
+          <div class="col-md-6 mx-auto">
+            {{#if successMsg}}
+            <div class="alert alert-success">{{successMsg}}</div>
+            {{/if}}
+
+            {{#if errorMsg}}
+            <div class="alert alert-danger">{{errorMsg}}</div>
+            {{/if}}
+
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{/if}}
+            <!--register modal-->
+            <div id="register-modal">
+              <div class="card bg-success text-center card-form modal-body">
+                <div class="card-body">
+                  {{#if errors}}
+                  {{#each errors}}
+                  <div class="alert alert-danger">{{msg}}</div>
+                  {{/each}}
+                  {{/if}}
+                  <form action="/bio" method="POST">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <textarea class="form-control form-control-lg" placeholder="Bio" name="bio"></textarea>
+                      </div>
+                      <input type="submit" value="Submit" class="btn btn-outline-class btn-block">
+                    </div>
+                  </form>
+                  <p>Registered Already? <a href="/login" id="modal-login">Login here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

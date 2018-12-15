@@ -1,0 +1,33 @@
+<section id="main-section">
+  <div class="container">
+    <div class="dark-overlay">
+      <div class="main-inner container">
+        <div class="row">
+
+          <div class="col-md-6 mx-auto">
+            {{#if successMsg}}
+            <div class="alert alert-success">{{successMsg}}</div>
+            {{/if}}
+
+            {{#if errorMsg}}
+            <div class="alert alert-danger">{{errorMsg}}</div>
+            {{/if}}
+
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{/if}}
+            <div class="user-list">
+                      {{#if users}}
+                      {{#each users}}
+                      <h2>Name: {{this.firstname}} {{this.lastname}}</h2>
+                        <p>Username: {{this.username}}</p>
+                        <p>Email Address: {{this.email}}</p>
+                        {{/each}}
+                      {{/if}}
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>

@@ -1,0 +1,40 @@
+{
+  "name": "mysocial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taurean",
+  "license": "ISC",
+  "engines": {
+    "node": "11.0.0"
+  },
+  "dependencies": {
+    "@types/connect-flash": "0.0.34",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express-session": "^1.15.11",
+    "@types/passport": "^0.4.7",
+    "@types/passport-local": "^1.0.33",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "email-templates": "^5.0.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.7.0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0"
+  }
+}
